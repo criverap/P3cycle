@@ -4,8 +4,8 @@ services:
  web:
   build:
    context: .
-   dockerfile: Dockerfile
-  container_name: p3cycle
+   dockerfile: Dockerfile.dev
+  container_name: p3cycle-dev
   entrypoint: sh entrypoint.sh
   working_dir: /home/node
   ports:
