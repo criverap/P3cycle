@@ -5,4 +5,5 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+//Disabling ServiceWorker while we don't have an production deploy.
+//registerServiceWorker();
