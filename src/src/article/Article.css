@@ -1,0 +1,9 @@
+.Article {
+    margin: 0 auto;
+    padding: 30px 40px 0 40px;
+}
+
+.Article-title-wrapper {
+    margin: 0 auto;
+    width: 50%;
+}

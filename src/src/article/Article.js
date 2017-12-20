@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
+import ArticleTitle from './articleTitle/ArticleTitle'
+import ArticleTimeDuration from './articleTimeDuration/ArticleTimeDuration'
 import './Article.css';
-
 class Article extends Component {
   render() {
     return (
       <div className="Article">
-        <header className="Article-header">
-          <h1 className="Article-title">Título artículo</h1>
-          <h3>Nombre autor</h3>
-        </header>
-        <aside class="left">Home / Temática / Artículo</aside>
-        <aside>Tiempo de lectura: 4 minutos</aside>
+      <div className="Article-title-wrapper">
+        <ArticleTitle />
+      </div>
+        <aside className="left">Home / Temática / Artículo</aside>
+        <ArticleTimeDuration />
         <section className="Article-intro">
             <h3>What is Lorem Ipsum?</h3>
             <p>

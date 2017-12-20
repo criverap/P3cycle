@@ -1,8 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import { shallow } from 'enzyme'
 import Article from './Article';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Article />, div);
-});
+Enzyme.configure({ adapter: new Adapter() });
+
+it('render component', () => {
+  const wrapper = shallow(<Article />)
+
+  expect(wrapper).toBeDefined()
+})
+
+it('contains an ArticleTitle component', () => {
+  const wrapper = shallow(<Article />)
+
+  expect(wrapper.find('ArticleTitle').exists()).toBeTruthy()
+})
